@@ -234,7 +234,7 @@ section {
 .products .service-box {
   box-shadow: var(--box-shadow);
   height: 100%;
-  padding: 40px;
+  padding: 20px;
   transition: 0.4s;
   border-radius: 24px;
   background: var(--light-color);
@@ -267,7 +267,7 @@ section {
 }
 
 .products .service-box i {
-  font-size: 42px;
+  font-size: 30px;
   color: var(--primary-color);
   transition: 0.4s;
 }
@@ -368,7 +368,7 @@ section {
 }
 
 .features .company-header {
-  gap: 10px;
+  gap: 0px;
   margin-bottom: 15px;
 }
 
@@ -449,7 +449,7 @@ section {
 
 @media (max-width: 991px) {
   .features .feature-box {
-    padding: 25px;
+    padding: 20px;
   }
   
   .features .company-header h3 {
@@ -801,6 +801,12 @@ section {
 }
 
 @media (max-width: 768px) {
+  .products .service-box .icon-box {
+    min-width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
   .hero h1 {
     font-size: 36px;
   }
@@ -1142,6 +1148,27 @@ section {
   transform: translateX(5px);
 }
 
+.company-img-bg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3a3a3a 20%, #1f1f1f 100%);
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.15), 0 1.5px 6px 0 rgba(0,0,0,0.08);
+  border-radius: 14px;
+  padding: 7px 14px 7px 7px;
+  margin-right: 14px;
+  min-width: 54px;
+  min-height: 54px;
+  border: 1.5px solid #2a2a2a;
+  transition: box-shadow 0.2s;
+}
+.company-img-bg img {
+  height: 40px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.25));
+}
+
 @media (max-width: 991px) {
   .news .news-img {
     height: 220px;
@@ -1160,4 +1187,16 @@ section {
   .news .news-img {
     height: 200px;
   }
+}
+
+@media (max-width: 480px) {
+  .products .service-box .icon-box {
+    min-width: 3rem;
+    height: 3rem;
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+  }
+  .header .logo span {
+  font-size: 20px;
+}
 }
