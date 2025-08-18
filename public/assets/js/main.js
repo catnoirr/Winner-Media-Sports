@@ -1,3 +1,27 @@
+  // Sidebar: close on nav click and set active
+  document.addEventListener('DOMContentLoaded', function() {
+    var sidebarLinks = document.querySelectorAll('#mobileSidebar .nav-link');
+    var offcanvasEl = document.getElementById('mobileSidebar');
+    if (offcanvasEl && sidebarLinks.length) {
+      sidebarLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          // Set active class
+          sidebarLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+          // Close sidebar using Bootstrap's Offcanvas API
+          if (typeof bootstrap !== 'undefined' && bootstrap.Offcanvas) {
+            var bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+            bsOffcanvas.hide();
+          } else {
+            // fallback: remove .show class
+            offcanvasEl.classList.remove('show');
+            offcanvasEl.setAttribute('aria-hidden', 'true');
+            offcanvasEl.style.visibility = 'hidden';
+          }
+        });
+      });
+    }
+  });
 /**
  * Template Name: FlexStart
  * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -25,9 +49,15 @@
    */
   const on = (type, el, listener, all = false) => {
     if (all) {
-      select(el, all).forEach(e => e.addEventListener(type, listener))
+      const elements = select(el, all);
+      if (elements && elements.length) {
+        elements.forEach(e => e && e.addEventListener(type, listener));
+      }
     } else {
-      select(el, all).addEventListener(type, listener)
+      const element = select(el, all);
+      if (element) {
+        element.addEventListener(type, listener);
+      }
     }
   }
 

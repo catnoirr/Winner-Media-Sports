@@ -34,17 +34,37 @@
         <img src="assets/img/companies/navbarLogo.png" alt="Winner Media Sports">
         <span>Winner Media  <span style="color:rgb(243, 190, 57);"> Sports</span></span>
       </a>
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar d-none">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#products">Services</a></li>
-          <li><a class="nav-link scrollto" href="#companies">Our Companies</a></li>
+          <li><a class="nav-link scrollto" href="#companies">Our Products</a></li>
           <li><a class="nav-link scrollto" href="#news">Sports News</a></li>
           <li><a class="nav-link scrollto" href="#about">About Us</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
-        <i class="bi mobile-nav-toggle bi-list"></i>
       </nav>
+      <!-- Mobile Nav Toggle -->
+      <button class="navbar-toggler d-lg-none border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar" aria-label="Toggle navigation">
+        <i class="bi bi-list" style="font-size:2rem;"></i>
+      </button>
+      <!-- Offcanvas Sidebar for Mobile -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileSidebarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link scrollto active" href="#hero" data-bs-dismiss="offcanvas">Home</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#products" data-bs-dismiss="offcanvas">Services</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#companies" data-bs-dismiss="offcanvas">Our Products</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#news" data-bs-dismiss="offcanvas">Sports News</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#about" data-bs-dismiss="offcanvas">About Us</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#contact" data-bs-dismiss="offcanvas">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -72,7 +92,7 @@
   </section>
 
   <!-- Logo Carousel Section -->
-  <section class="logo-carousel py-5">
+  <!-- <section class="logo-carousel py-5">
     <div class="container" data-aos="fade-up">
       <div class="swiper logo-slider">
         <div class="swiper-wrapper align-items-center">
@@ -109,7 +129,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <main id="main">
     <!-- Products Section -->
@@ -208,6 +228,52 @@
               </div>
             </div>
           </div>
+
+          <!-- Personal Branding -->
+          <div class="col" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box d-flex align-items-start">
+              <div class="icon-box">
+                <i class="bi bi-person-badge"></i>
+              </div>
+              <div class="service-content">
+                <h3>Personal Branding</h3>
+                <p>Build and enhance your professional identity with tailored personal branding strategies for platforms like LinkedIn and beyond.</p>
+                <ul class="mt-4">
+                  <li>LinkedIn Profile Optimization</li>
+                  <li>Thought Leadership Content Creation</li>
+                  <li>Professional Portfolio Development</li>
+                  <li>Brand Storytelling</li>
+                </ul>
+                <a href="#" class="read-more mt-4">
+                  <span>Explore Service</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Page Management -->
+          <div class="col" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box d-flex align-items-start">
+              <div class="icon-box">
+                <i class="bi bi-people"></i>
+              </div>
+              <div class="service-content">
+                <h3>Social Media Page Management</h3>
+                <p>Comprehensive management of your social media pages to grow your audience, boost engagement, and maintain a consistent brand voice.</p>
+                <ul class="mt-4">
+                  <li>Page Setup & Optimization</li>
+                  <li>Content Scheduling & Publishing</li>
+                  <li>Community Engagement</li>
+                  <li>Analytics & Performance Reporting</li>
+                </ul>
+                <a href="#" class="read-more mt-4">
+                  <span>Explore Service</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -228,9 +294,9 @@
                 <h3>Cricket Winner</h3>
               </div>
               <div class="company-content">
-                <p class="mb-4">Premier cricket media platform delivering live coverage and expert analysis.</p>
+                <p class="mb-4">Premier cricket media platform delivering live commentary and expert analysis.</p>
                 <ul class="company-features">
-                  <li><i class="bi bi-check2-circle"></i> Live Match Coverage</li>
+                  <li><i class="bi bi-check2-circle"></i> Live Match Commentary</li>
                   <li><i class="bi bi-check2-circle"></i> Expert Commentary</li>
                   <li><i class="bi bi-check2-circle"></i> Digital Content</li>
                 </ul>
@@ -249,9 +315,9 @@
                 <h3>Football Winner</h3>
               </div>
               <div class="company-content">
-                <p class="mb-4">Comprehensive football coverage with state-of-the-art production.</p>
+                <p class="mb-4">Comprehensive football Commentary with state-of-the-art production.</p>
                 <ul class="company-features">
-                  <li><i class="bi bi-check2-circle"></i> Match Day Coverage</li>
+                  <li><i class="bi bi-check2-circle"></i> Match Day Commentary</li>
                   <li><i class="bi bi-check2-circle"></i> Studio Shows</li>
                   <li><i class="bi bi-check2-circle"></i> Digital Content</li>
                 </ul>
@@ -270,9 +336,9 @@
                 <h3>Volleyball Winner</h3>
               </div>
               <div class="company-content">
-                <p class="mb-4">Premier volleyball platform offering high-quality coverage.</p>
+                <p class="mb-4">Premier volleyball platform offering high-quality Commentary.</p>
                 <ul class="company-features">
-                  <li><i class="bi bi-check2-circle"></i> Tournament Coverage</li>
+                  <li><i class="bi bi-check2-circle"></i> Tournament Commentary</li>
                   <li><i class="bi bi-check2-circle"></i> League Updates</li>
                   <li><i class="bi bi-check2-circle"></i> Digital Content</li>
                 </ul>
@@ -291,9 +357,9 @@
                 <h3>Tennis Winner</h3>
               </div>
               <div class="company-content">
-                <p class="mb-4">Dedicated tennis network delivering professional coverage.</p>
+                <p class="mb-4">Dedicated tennis network delivering professional Commentary.</p>
                 <ul class="company-features">
-                  <li><i class="bi bi-check2-circle"></i> Tournament Coverage</li>
+                  <li><i class="bi bi-check2-circle"></i> Tournament Commentary</li>
                   <li><i class="bi bi-check2-circle"></i> Live Streaming</li>
                   <li><i class="bi bi-check2-circle"></i> Digital Content</li>
                 </ul>
@@ -312,9 +378,9 @@
                 <h3>Basketball Winner</h3>
               </div>
               <div class="company-content">
-                <p class="mb-4">Professional basketball coverage with cutting-edge production.</p>
+                <p class="mb-4">Professional basketball Commentary with cutting-edge production.</p>
                 <ul class="company-features">
-                  <li><i class="bi bi-check2-circle"></i> Game Coverage</li>
+                  <li><i class="bi bi-check2-circle"></i> Game Commentary</li>
                   <li><i class="bi bi-check2-circle"></i> Studio Content</li>
                   <li><i class="bi bi-check2-circle"></i> Digital Solutions</li>
                 </ul>
@@ -333,9 +399,9 @@
                 <h3>Kabaddi Winner</h3>
               </div>
               <div class="company-content">
-                <p class="mb-4">Specialized kabaddi network providing comprehensive coverage.</p>
+                <p class="mb-4">Specialized kabaddi network providing comprehensive Commentary.</p>
                 <ul class="company-features">
-                  <li><i class="bi bi-check2-circle"></i> League Coverage</li>
+                  <li><i class="bi bi-check2-circle"></i> League Commentary</li>
                   <li><i class="bi bi-check2-circle"></i> Match Production</li>
                   <li><i class="bi bi-check2-circle"></i> Digital Content</li>
                 </ul>
@@ -538,14 +604,20 @@
                 <div class="info-box">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Visit Us</h3>
-                  <p>Winner Sports Media Tower<br>Sector 63, Noida<br>Uttar Pradesh, India</p>
+                  <p>
+                    Winner Media Sports L.L.C- FZ
+               The Meydan Hotel, Nad Al Sheba
+               P.O. Box 9305, Dubai,
+               United Arab Emirates
+                  </p>
+              <br><br>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+91 120 4567890<br>+91 120 4567891</p>
+                  <p>+971 0544147996</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -610,7 +682,7 @@
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
               <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/showcase/winner-media-sports/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
 
@@ -619,19 +691,20 @@
             <ul>
               <li><a href="#hero">Home</a></li>
               <li><a href="#about">About us</a></li>
-              <li><a href="#products">Products</a></li>
-              <li><a href="#companies">Companies</a></li>
+              <li><a href="#products">Services</a></li>
+              <li><a href="#companies">Products</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              Winner  Media Sports Tower <br>
-              Sector 63, Noida<br>
-              Uttar Pradesh, India <br><br>
-              <strong>Phone:</strong> +91 120 4567890<br>
+              Winner Media Sports L.L.C- FZ<br>
+The Meydan Hotel, Nad Al Sheba<br>
+P.O. Box 9305, Dubai<br>
+United Arab Emirates<br><br>
+              <strong>Phone:</strong> +971 0544147996<br>
               <strong>Email:</strong> info@winnermediasports.com<br>
             </p>
           </div>

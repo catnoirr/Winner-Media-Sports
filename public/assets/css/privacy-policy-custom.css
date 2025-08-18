@@ -1,0 +1,51 @@
+/* Custom styles for privacy-policy.html */
+
+.privacy-hero {
+  background: none;
+  min-height: 220px;
+  padding: 0;
+}
+.hero-svg-bg {
+  height: 220px;
+  z-index: 0;
+}
+.hero-content {
+  z-index: 1;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.privacy-title {
+  color: #232323;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+  font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+}
+.privacy-subtitle {
+  color: #7a6c3e;
+  max-width: 540px;
+  font-size: 1.13rem;
+  margin: 0 auto;
+}
+.privacy-container {
+  max-width: 900px;
+}
+.privacy-card {
+  border-radius: 1.5rem;
+  background: rgba(255,255,255,0.97);
+  z-index: 20;
+  margin-top: 0px;
+}
+@media (max-width: 768px) {
+  .privacy-title {
+    font-size: 1.5rem;
+  }
+  .privacy-subtitle {
+    font-size: 1rem;
+  }
+  .privacy-card {
+    padding: 1.5rem 1rem;
+  }
+}
