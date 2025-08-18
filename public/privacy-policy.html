@@ -76,77 +76,306 @@
 
   <main id="main">
 
-    <!-- Hero Section with dynamic SVG and shadow -->
-    <section class="privacy-hero d-flex align-items-center position-relative">
-      <div class="w-100 position-absolute top-0 start-0 hero-svg-bg">
-        <svg class="w-100 h-100" height="220" width="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 220">
-          <defs>
-            <linearGradient id="heroGrad4" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#f3be39"/>
-              <stop offset="100%" stop-color="#fffbe6"/>
-            </linearGradient>
-            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-              <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#f3be39" flood-opacity="0.13"/>
-            </filter>
-          </defs>
-          <path d="M0,0 Q720,260 1440,0 L1440,220 L0,220 Z" fill="url(#heroGrad4)" filter="url(#shadow)"/>
-          <ellipse cx="1200" cy="80" rx="120" ry="36" fill="#fffbe6" opacity="0.18"/>
-          <ellipse cx="300" cy="160" rx="180" ry="44" fill="#f3be39" opacity="0.10"/>
-        </svg>
+    <!-- Enhanced Hero Section -->
+    <section class="privacy-hero d-flex align-items-center position-relative overflow-hidden">
+      <div class="hero-background">
+        <div class="hero-gradient"></div>
+        <div class="hero-pattern"></div>
+        <div class="floating-elements">
+          <div class="floating-element element-1"></div>
+          <div class="floating-element element-2"></div>
+          <div class="floating-element element-3"></div>
+        </div>
       </div>
       <div class="container text-center position-relative hero-content">
-        <h1 class="fw-bold mb-1 privacy-title">Privacy Policy</h1>
-        <p class="lead privacy-subtitle">Your privacy matters to us. Learn how Winner Media Sports collects, uses, and protects your information.</p>
+        <div class="hero-badge mb-3" data-aos="fade-up">
+          <i class="bi bi-shield-check"></i>
+          <span>Data Protection</span>
+        </div>
+        <h1 class="privacy-title mb-4" data-aos="fade-up" data-aos-delay="100">Privacy Policy</h1>
+        <p class="privacy-subtitle mb-4" data-aos="fade-up" data-aos-delay="200">Winner Media Sports ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+        <div class="hero-stats d-flex justify-content-center gap-4 flex-wrap" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-item">
+            <i class="bi bi-shield-lock"></i>
+            <span>Secure</span>
+          </div>
+          <div class="stat-item">
+            <i class="bi bi-eye-slash"></i>
+            <span>Private</span>
+          </div>
+          <div class="stat-item">
+            <i class="bi bi-check-circle"></i>
+            <span>Compliant</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="inner-page py-5 position-relative">
+    <!-- Enhanced Content Section -->
+    <section class="privacy-content py-5">
       <div class="container privacy-container">
-        <div class="card shadow-sm border-0 p-4 p-md-5 position-relative privacy-card">
-          <h1 class="mb-3 fw-bold" style="color: #222;">Privacy Policy</h1>
-          <p class="text-muted mb-4">Last updated: August 10, 2025</p>
-          <p>Winner Media Sports ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
-          <hr class="my-4">
-          <h2 class="fw-semibold mt-4">1. Information We Collect</h2>
-          <ul>
-            <li><strong>Personal Information:</strong> Name, email address, phone number, and other information you provide via forms or contact methods.</li>
-            <li><strong>Usage Data:</strong> Information about how you use our website, such as IP address, browser type, pages visited, and time spent.</li>
-            <li><strong>Cookies & Tracking:</strong> We use cookies and similar technologies to enhance your experience and analyze site usage.</li>
-          </ul>
-          <h2 class="fw-semibold mt-4">2. How We Use Your Information</h2>
-          <ul>
-            <li>To provide, operate, and maintain our website and services.</li>
-            <li>To improve, personalize, and expand our offerings.</li>
-            <li>To communicate with you, including customer service and updates.</li>
-            <li>To analyze usage and trends to improve user experience.</li>
-            <li>To comply with legal obligations and protect our rights.</li>
-          </ul>
-          <h2 class="fw-semibold mt-4">3. Sharing Your Information</h2>
-          <ul>
-            <li>We do not sell your personal information.</li>
-            <li>We may share information with trusted service providers who assist us in operating our website and services.</li>
-            <li>We may disclose information if required by law or to protect our rights and safety.</li>
-          </ul>
-          <h2 class="fw-semibold mt-4">4. Data Security</h2>
-          <p>We implement reasonable security measures to protect your information. However, no method of transmission over the Internet is 100% secure.</p>
-          <h2 class="fw-semibold mt-4">5. Your Rights & Choices</h2>
-          <ul>
-            <li>You may request access, correction, or deletion of your personal data by contacting us.</li>
-            <li>You can manage cookie preferences through your browser settings.</li>
-          </ul>
-          <h2 class="fw-semibold mt-4">6. Children's Privacy</h2>
-          <p>Our services are not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
-          <h2 class="fw-semibold mt-4">7. Third-Party Links</h2>
-          <p>Our website may contain links to third-party sites. We are not responsible for their privacy practices or content.</p>
-          <h2 class="fw-semibold mt-4">8. Changes to This Policy</h2>
-          <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
-          <h2 class="fw-semibold mt-4">9. Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-          <ul>
-            <li>Email: <a href="mailto:info@winnermediasports.com">info@winnermediasports.com</a></li>
-            <li>Phone: +971 0544147996</li>
-            <li>Address: Winner Media Sports L.L.C- FZ, The Meydan Hotel, Nad Al Sheba, P.O. Box 9305, Dubai, United Arab Emirates</li>
-          </ul>
+        <!-- Privacy Policy Introduction -->
+        
+
+        <!-- Privacy Policy Sections -->
+        <div class="privacy-sections">
+          <!-- Section 1 -->
+          <div class="privacy-section" >
+            <div class="section-header">
+              <div class="section-icon">
+                <i class="bi bi-collection"></i>
+              </div>
+              <h2 class="section-title">Information We Collect</h2>
+            </div>
+            <div class="section-content">
+              <div class="info-grid">
+                <div class="info-card">
+                  <div class="info-icon personal">
+                    <i class="bi bi-person-circle"></i>
+                  </div>
+                  <h4>Personal Information</h4>
+                  <p>Name, email address, phone number, and other information you provide via forms or contact methods.</p>
+                </div>
+                <div class="info-card">
+                  <div class="info-icon usage">
+                    <i class="bi bi-graph-up"></i>
+                  </div>
+                  <h4>Usage Data</h4>
+                  <p>Information about how you use our website, such as IP address, browser type, pages visited, and time spent.</p>
+                </div>
+                <div class="info-card">
+                  <div class="info-icon cookies">
+                    <i class="bi bi-cookie"></i>
+                  </div>
+                  <h4>Cookies & Tracking</h4>
+                  <p>We use cookies and similar technologies to enhance your experience and analyze site usage.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="privacy-section" id="section-2" data-aos="fade-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h2 class="section-title">How We Use Your Information</h2>
+            </div>
+            <div class="section-content">
+              <div class="usage-list">
+                <div class="usage-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>To provide, operate, and maintain our website and services</span>
+                </div>
+                <div class="usage-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>To improve, personalize, and expand our offerings</span>
+                </div>
+                <div class="usage-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>To communicate with you, including customer service and updates</span>
+                </div>
+                <div class="usage-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>To analyze usage and trends to improve user experience</span>
+                </div>
+                <div class="usage-item">
+                  <i class="bi bi-check-circle"></i>
+                  <span>To comply with legal obligations and protect our rights</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="privacy-section" id="section-3" data-aos="fade-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <i class="bi bi-share"></i>
+              </div>
+              <h2 class="section-title">Sharing Your Information</h2>
+            </div>
+            <div class="section-content">
+              <div class="sharing-highlight">
+                <div class="highlight-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>We do not sell your personal information</h4>
+              </div>
+              <div class="sharing-details">
+                <div class="detail-item">
+                  <i class="bi bi-people"></i>
+                  <div>
+                    <h5>Service Providers</h5>
+                    <p>We may share information with trusted service providers who assist us in operating our website and services.</p>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <i class="bi bi-file-earmark-text"></i>
+                  <div>
+                    <h5>Legal Requirements</h5>
+                    <p>We may disclose information if required by law or to protect our rights and safety.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4 -->
+          <div class="privacy-section" id="section-4" data-aos="fade-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+              <h2 class="section-title">Data Security</h2>
+            </div>
+            <div class="section-content">
+              <div class="security-card">
+                <div class="security-visual">
+                  <div class="security-layers">
+                    <div class="layer layer-1"></div>
+                    <div class="layer layer-2"></div>
+                    <div class="layer layer-3"></div>
+                    <i class="bi bi-shield-fill-check security-icon"></i>
+                  </div>
+                </div>
+                <div class="security-text">
+                  <h4>Multi-Layer Protection</h4>
+                  <p>We implement reasonable security measures to protect your information. However, no method of transmission over the Internet is 100% secure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 5 -->
+          <div class="privacy-section" id="section-5" data-aos="fade-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <i class="bi bi-person-check"></i>
+              </div>
+              <h2 class="section-title">Your Rights & Choices</h2>
+            </div>
+            <div class="section-content">
+              <div class="rights-grid">
+                <div class="right-card">
+                  <i class="bi bi-eye"></i>
+                  <h5>Access</h5>
+                  <p>Request access to your personal data</p>
+                </div>
+                <div class="right-card">
+                  <i class="bi bi-pencil"></i>
+                  <h5>Correction</h5>
+                  <p>Request correction of your data</p>
+                </div>
+                <div class="right-card">
+                  <i class="bi bi-trash"></i>
+                  <h5>Deletion</h5>
+                  <p>Request deletion of your data</p>
+                </div>
+                <div class="right-card">
+                  <i class="bi bi-sliders"></i>
+                  <h5>Cookie Control</h5>
+                  <p>Manage cookie preferences</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 6 -->
+          <div class="privacy-section" id="section-6" data-aos="fade-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h2 class="section-title">Children's Privacy</h2>
+            </div>
+            <div class="section-content">
+              <div class="children-notice">
+                <div class="notice-icon">
+                  <i class="bi bi-info-circle"></i>
+                </div>
+                <div class="notice-text">
+                  <h4>Age Restriction</h4>
+                  <p>Our services are not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 7 -->
+          <div class="privacy-section" id="section-7" data-aos="fade-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <i class="bi bi-link-45deg"></i>
+              </div>
+              <h2 class="section-title">Third-Party Links</h2>
+            </div>
+            <div class="section-content">
+              <div class="links-notice">
+                <i class="bi bi-exclamation-triangle"></i>
+                <p>Our website may contain links to third-party sites. We are not responsible for their privacy practices or content.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 8 -->
+          <div class="privacy-section" id="section-8" data-aos="fade-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <i class="bi bi-arrow-clockwise"></i>
+              </div>
+              <h2 class="section-title">Changes to This Policy</h2>
+            </div>
+            <div class="section-content">
+              <div class="changes-notice">
+                <i class="bi bi-bell"></i>
+                <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 9 -->
+          <div class="privacy-section" id="section-9" data-aos="fade-up">
+            <div class="section-header">
+              <div class="section-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <h2 class="section-title">Contact Us</h2>
+            </div>
+            <div class="section-content">
+              <p class="contact-intro">If you have any questions about this Privacy Policy, please contact us:</p>
+              <div class="contact-grid">
+                <div class="contact-card">
+                  <div class="contact-icon email">
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                  <div class="contact-info">
+                    <h5>Email</h5>
+                    <a href="mailto:info@winnermediasports.com">info@winnermediasports.com</a>
+                  </div>
+                </div>
+                <div class="contact-card">
+                  <div class="contact-icon phone">
+                    <i class="bi bi-telephone-fill"></i>
+                  </div>
+                  <div class="contact-info">
+                    <h5>Phone</h5>
+                    <span>+971 0544147996</span>
+                  </div>
+                </div>
+                <div class="contact-card full-width">
+                  <div class="contact-icon address">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div class="contact-info">
+                    <h5>Address</h5>
+                    <span>Winner Media Sports L.L.C- FZ, The Meydan Hotel, Nad Al Sheba, P.O. Box 9305, Dubai, United Arab Emirates</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -290,6 +519,7 @@
     />
   </noscript>
 
+  <script src="assets/js/scroll-fix.js"></script>
 </body>
 
 </html>

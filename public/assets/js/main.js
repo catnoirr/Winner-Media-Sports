@@ -92,6 +92,9 @@
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
+    if (document.querySelector('.privacy-content')) {
+      return;
+    }
     let header = select('#header')
     let offset = header.offsetHeight
 
